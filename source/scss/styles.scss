@@ -1059,7 +1059,11 @@ body, div, h1, h2, h3, h4, p, input {
     0px 0px 1px rgba(0, 0, 0, 0.04), 
     0px 4px 8px rgba(0, 0, 0, 0.04), 
     0px 16px 24px rgba(0, 0, 0, 0.04),
-    0px 24px 32px rgba(0, 0, 0, 0.04);
+		0px 24px 32px rgba(0, 0, 0, 0.04);
+		
+		@media (max-width: 1200px) and (min-width: 1050px){
+			bottom: 13%
+		}
 
     @include sm(bottom, 23%);
 
@@ -1181,6 +1185,9 @@ body, div, h1, h2, h3, h4, p, input {
 		@media (max-width: 1366px) and (min-width: 1360px){
 			margin-top: 10px;
 		}
+
+		@include md(margin-top, 30px);
+		// @include xs(margin-top, 20px);
 	}
 }
 
