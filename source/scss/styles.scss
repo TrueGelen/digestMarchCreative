@@ -1087,7 +1087,8 @@ body, div, h1, h2, h3, h4, p, input {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+		color: white;
+		text-align: center;
 
     @include md-block{
       top: 15%;
@@ -1148,7 +1149,11 @@ body, div, h1, h2, h3, h4, p, input {
     line-height: 40px;
     text-align: center;
     letter-spacing: 1px;
-    margin-top: 20px;
+		margin-top: 20px;
+		
+		@media (max-width: 1366px) and (min-width: 1360px){
+			margin-top: 10px;
+		}
 
     @include md-block{
       font-size: 2vw;
@@ -1161,7 +1166,22 @@ body, div, h1, h2, h3, h4, p, input {
       line-height: 0;
       margin-top: 4.5vw;
     }
-  }
+	}
+	
+	&__quarter{
+		display: inline-block;
+		font-family: GothamPro-Bold, sans-serif;
+		font-size: 20px;
+		margin-top: 20px;
+		padding: 10px 25px;
+		background-color: $burgerColor;
+		// background-color: #54ccad;
+		// color: #54ccad;
+
+		@media (max-width: 1366px) and (min-width: 1360px){
+			margin-top: 10px;
+		}
+	}
 }
 
 //-----template----
@@ -1635,4 +1655,55 @@ body, div, h1, h2, h3, h4, p, input {
 		@include sm(max-width, 40vw);
 		@include xs(max-width, 60vw);
 	}
+}
+
+.lastSlide{
+
+  &__content{
+    // border: 1px solid red;
+  }
+
+  &__title{
+
+  }
+
+  &__subtitle{
+
+    &_1{
+
+    }
+  }
+
+  &__contact{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    
+    &_1{
+      margin-top: 50px;
+    }
+  }
+
+  &__contactIcon{
+    width: 60px;
+    margin-right: 20px;
+
+    @include xs(width, 50px);
+    @include xxs-block{
+      width: 40px;
+      margin-right: 10px;
+    }
+  }
+
+  &__contactText{
+
+  }
+
+  &__contactTitle{
+
+  }
+
+  &__contactAdress{
+
+  }
 }
