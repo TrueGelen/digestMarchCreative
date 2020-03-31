@@ -750,6 +750,10 @@ body, div, h1, h2, h3, h4, p, input {
   color: #004717;
 }
 
+.textLink{
+	color: rgb(19, 19, 255);
+}
+
 //---unique slide----
 .slide{
   position: relative;
@@ -1605,14 +1609,9 @@ body, div, h1, h2, h3, h4, p, input {
 
 .bg1_2{	
 	background: url(../images/my/bg/1_2.jpg) no-repeat;
+	background-position: center;
 }
 //-------slides
-.slide3{
-
-	&__link{
-		color: rgb(19, 19, 255);
-	}
-}
 
 .slide18{
 
