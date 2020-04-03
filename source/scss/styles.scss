@@ -580,31 +580,31 @@ body, div, h1, h2, h3, h4, p, input {
   }
 
   &_1366_mt10{
-    @media (width: 1366px){
+    @media (max-width: 1366px) and (max-height: 768px) and ( min-width: 1051px){
       margin-top: 10px;
     }
   }
 
   &_1366_mt5{
-    @media (width: 1366px){
+    @media (max-width: 1366px) and (max-height: 768px) and ( min-width: 1051px){
       margin-top: 5px;
     }
   }
 
   &_1366_mt0{
-    @media (width: 1366px){
-      margin-top: 5px;
+    @media (max-width: 1366px) and (max-height: 768px) and ( min-width: 1051px){
+      margin-top: 0px;
     }
   }
 
   &_1366_fs14{
-    @media (width: 1366px){
+    @media (max-width: 1366px) and (max-height: 768px) and ( min-width: 1051px){
       font-size: 14px;
     }
   }
 
   &_1366_fs12{
-    @media (width: 1366px){
+    @media (max-width: 1366px) and (max-height: 768px) and ( min-width: 1051px){
       font-size: 12px;
     }
   }

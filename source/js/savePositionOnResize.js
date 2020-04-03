@@ -68,14 +68,11 @@ window.addEventListener('load', () => {
 				}
 				// console.log('not null', activeSlide, accumulatedHeight)
 			}
-
-			window.setTimeout(() => {
-				window.addEventListener('scroll', scrollFunc)
-			}, 100)
-
-			// console.log('setParam', activeSlide, slides[activeSlide])
 		}
-
+		// console.log('setParam', activeSlide, slides[activeSlide])
+		window.setTimeout(() => {
+			window.addEventListener('scroll', scrollFunc)
+		}, 100)
 		screenWidth = window.innerWidth
 	}
 
